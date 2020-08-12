@@ -22,3 +22,6 @@
 - Start time:
 - Finish time:
 - Actual time needed to complete:
+
+## Resources
+- https://www.w3schools.com/jsref/jsref_includes_array.asp#:~:text=The%20includes()%20method%20determines,element%2C%20and%20false%20if%20not. Include method
