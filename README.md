@@ -42,14 +42,14 @@
 
 - Estimate of time needed to complete: 1 hour
 - Start time: 3:30 PM
-- Finish time: 9:40 PM
-- Actual time needed to complete: 25 minutes
+- Finish time: 4:15 PM
+- Actual time needed to complete: 45 minutes
 
 7. Feature #7: Style the application
 
 - Estimate of time needed to complete: 1 hour
-- Start time: 9:15 PM
-- Finish time: 9:40 PM
+- Start time: 4:30 PM
+- Finish time:  PM
 - Actual time needed to complete: 25 minutes
 
 ## Resources

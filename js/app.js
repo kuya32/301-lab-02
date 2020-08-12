@@ -30,11 +30,12 @@ Image.prototype.renderMustache = function () {
   $('main').append(newHTML);
 }
 
-
 const renderKeywordOptions = function (keywordArray) {
+  $('.kidsOfClone').remove();
   keywordArray.forEach(keyword => {
-    const $clonedOption = $('option:first-child').clone();
+    const $clonedOption = $('#filterKeyword option:first-child').clone();
     $clonedOption.attr('value', keyword);
+    $clonedOption.addClass('kidsOfClone');
     $clonedOption.text(keyword);
     $('#filterKeyword').append($clonedOption);
   });
@@ -43,6 +44,7 @@ const renderKeywordOptions = function (keywordArray) {
 // suggestion from Skyler: add second param to our function
 const makeImageInstances = (jsonArr, num) => {
   imageArray = [];
+  keywordArray = [];
   jsonArr.forEach(indexObj => {
     new Image (indexObj.image_url, indexObj.title, indexObj.description, indexObj.keyword, indexObj.horns, num);
 
@@ -59,7 +61,7 @@ const makeImageInstances = (jsonArr, num) => {
 
 $.get('data/page-1.json').then(results => makeImageInstances(results, 1));
 
-$('select').on('change', selectedKeyword);
+$('#filterKeyword').on('change', selectedKeyword);
 
 function selectedKeyword (){
   const selection = $(this).val();
@@ -74,11 +76,17 @@ function selectedKeyword (){
 }
 
 // button for Lab 3
-$('button').on('click', getOtherJsonFile);
+$('#pageTwo').on('click', getOtherJsonFile);
 
-function getOtherJsonFile (){
+function getOtherJsonFile () {
   $('.1').hide();
   $.get('data/page-2.json').then(results => makeImageInstances(results, 2));
-  // how do I hide page 1 option keywords (emptying the keywordArray wasn't working)
+}
+
+$('#pageOne').on('click', getPageOneJsonFile);
+
+function getPageOneJsonFile () {
+  $('.2').hide();
+  $.get('data/page-1.json').then(results => makeImageInstances(results, 1));
 }
 
