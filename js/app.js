@@ -17,7 +17,7 @@ Image.prototype.renderJQ = function () {
   const $clonedSection = $('section:first-child').clone();
 
   $clonedSection.find('h2').text(this.title);
-  $clonedSection.find('img').attr('src', this.url).attr('alt', this.title);
+  $clonedSection.find('img').attr('src', this.url).attr('alt', this.keyword);
   $clonedSection.find('p').text(this.desc);
 
   $('main').append($clonedSection);
@@ -43,7 +43,7 @@ const makeImageInstances = jsonArr => {
   });
 
   imageArray.forEach(arrIndexVal => arrIndexVal.renderJQ());
-
+  // $('main').remove('section:first-child');
   //Do the same for line 36,
   renderOption(keywordArray);
 };
@@ -54,5 +54,13 @@ $.get('data/page-1.json')
 $('select').on('change', selectedKeyword);
 
 function selectedKeyword (){
-  console.log($('option').val());
+  const selection = $(this).val();
+  $('section').each(function() {
+    let findAlt = $(this).find('img').attr('alt');
+    if (selection === findAlt) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+  });
 }
