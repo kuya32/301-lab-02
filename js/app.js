@@ -43,7 +43,7 @@ const makeImageInstances = jsonArr => {
   });
 
   imageArray.forEach(arrIndexVal => arrIndexVal.renderJQ());
-
+  // $('main').remove('section:first-child');
   //Do the same for line 36,
   renderOption(keywordArray);
 };

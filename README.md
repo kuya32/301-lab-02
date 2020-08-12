@@ -25,3 +25,6 @@
 
 ## Resources
 - https://www.w3schools.com/jsref/jsref_includes_array.asp#:~:text=The%20includes()%20method%20determines,element%2C%20and%20false%20if%20not. Include method
+- https://api.jquery.com/each/. Each method
+- https://www.w3schools.com/jquery/jquery_hide_show.asp Show and hide method
+- Got help from Cait Rowland for 'change' event. 
