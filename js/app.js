@@ -1,7 +1,7 @@
 'use strict';
 
 let imageArray = [];
-const keywordArray = [];
+let keywordArray = [];
 
 function Image (url, title, desc, keyword, horns, num) {
   this.url = url;
@@ -14,6 +14,7 @@ function Image (url, title, desc, keyword, horns, num) {
   imageArray.push(this);
 }
 
+// ==== Old render from Lab 2 for Reference ==== //
 // Image.prototype.renderJQ = function () {
 //   const $clonedSection = $('section:first-child').clone();
 
@@ -30,16 +31,16 @@ Image.prototype.renderMustache = function () {
 }
 
 
-const renderOption = function (keywordArray) {
+const renderKeywordOptions = function (keywordArray) {
   keywordArray.forEach(keyword => {
     const $clonedOption = $('option:first-child').clone();
     $clonedOption.attr('value', keyword);
     $clonedOption.text(keyword);
-    $('select').append($clonedOption);
+    $('#filterKeyword').append($clonedOption);
   });
 };
 
-// suggestion from Skyler: (jsonArr, num)
+// suggestion from Skyler: add second param to our function
 const makeImageInstances = (jsonArr, num) => {
   imageArray = [];
   jsonArr.forEach(indexObj => {
@@ -53,10 +54,9 @@ const makeImageInstances = (jsonArr, num) => {
 
   imageArray.forEach(arrIndexVal => arrIndexVal.renderMustache());
   
-  renderOption(keywordArray);
+  renderKeywordOptions(keywordArray);
 };
 
-// how do we get this to not run again after clicking the button - we tried moving it up but it broke
 $.get('data/page-1.json').then(results => makeImageInstances(results, 1));
 
 $('select').on('change', selectedKeyword);
@@ -73,11 +73,12 @@ function selectedKeyword (){
   });
 }
 
-// addons for Lab 3
+// button for Lab 3
 $('button').on('click', getOtherJsonFile);
 
 function getOtherJsonFile (){
   $('.1').hide();
   $.get('data/page-2.json').then(results => makeImageInstances(results, 2));
+  // how do I hide page 1 option keywords (emptying the keywordArray wasn't working)
 }
 

@@ -21,10 +21,18 @@ h1 {
   display: none;
 }
 
+header > div {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 select {
   height: 40px;
   display: block;
-  margin: 0 auto;
+  font-size: 1.5rem;
+  border: solid black 2px;
 }
 
 section, img, h2, p {
@@ -34,6 +42,8 @@ section, img, h2, p {
 img {
   height: 320px;
   border: groove 10px brown;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -44,13 +54,12 @@ p {
 
 h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 section {
-  float: left;
   margin: 10px;
-  
 }
 
 header {
@@ -60,9 +69,20 @@ header {
 
 main {
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 footer {
-  clear: both;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 40px;
+}
+
+#morePics {
+  height: 40px;
+  font-size: 1.5rem;
+  background-color: white;
 }
