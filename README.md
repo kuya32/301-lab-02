@@ -23,6 +23,34 @@
 - Finish time: 9:40 PM
 - Actual time needed to complete: 25 minutes
 
+4. Feature #4: Style the application
+
+- Estimate of time needed to complete: 1 hour
+- Start time: 2:00 PM
+- Finish time:  PM
+- Actual time needed to complete: 
+
+5. Feature #5: Style the application
+
+- Estimate of time needed to complete: 1 hour
+- Start time: 9:15 PM
+- Finish time: 9:40 PM
+- Actual time needed to complete: 25 minutes
+
+6. Feature #6: Style the application
+
+- Estimate of time needed to complete: 1 hour
+- Start time: 9:15 PM
+- Finish time: 9:40 PM
+- Actual time needed to complete: 25 minutes
+
+7. Feature #7: Style the application
+
+- Estimate of time needed to complete: 1 hour
+- Start time: 9:15 PM
+- Finish time: 9:40 PM
+- Actual time needed to complete: 25 minutes
+
 ## Resources
 
 - [Used Include method](https://www.w3schools.com/jsref/jsref_includes_array.asp#:~:text=The%20includes()%20method%20determines,element%2C%20and%20false%20if%20not)
