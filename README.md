@@ -24,6 +24,7 @@
 - Actual time needed to complete: 25 minutes
 
 ## Resources
+
 - [Used Include method](https://www.w3schools.com/jsref/jsref_includes_array.asp#:~:text=The%20includes()%20method%20determines,element%2C%20and%20false%20if%20not)
 - [Used Each method](https://api.jquery.com/each/)
 - [Used Show and Hide method](https://www.w3schools.com/jquery/jquery_hide_show.asp)
