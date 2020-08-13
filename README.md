@@ -1,5 +1,6 @@
 # Code Fellows | Lab: 02 & Lab: 03
-**Contributors:** [Tif Taylor](https://github.com/tiftaylor) and [Marchael Acode](https://github.com/kuya32)
+**Contributors:** [Tif Taylor](https://github.com/tiftaylor) and [Marchael Acode](https://github.com/kuya32)  
+**Date:** August 2020
 
 ## Time Estimates per Assignment Request
 
@@ -42,18 +43,19 @@
 
 - Estimate of time needed to complete: 1 hour
 - Start time: 3:30 PM
-- Finish time: 4:15 PM
-- Actual time needed to complete: 45 minutes
+- Finish time: 4:30 PM
+- Actual time needed to complete: 1 hour
 
 7. Feature #7: Style the application
 
 - Estimate of time needed to complete: 1 hour
-- Start time: 4:30 PM
-- Finish time:  PM
-- Actual time needed to complete: 25 minutes
+- Start time: 4:40 PM
+- Finish time: 5:30 PM
+- Actual time needed to complete: 50 minutes
 
 ## Resources
 - [Used Include method](https://www.w3schools.com/jsref/jsref_includes_array.asp#:~:text=The%20includes()%20method%20determines,element%2C%20and%20false%20if%20not)
 - [Used Each method](https://api.jquery.com/each/)
 - [Used Show and Hide method](https://www.w3schools.com/jquery/jquery_hide_show.asp)
-- Got help from Cait Rowland for 'change' event.
+- Got TA help from Cait Rowland for 'change' event.
+- Got TA help from Skyler for adding a 2nd param to our handle data function and to re-render data when sorting.
