@@ -29,7 +29,7 @@ function Image (url, title, desc, keyword, horns, num) {
 Image.prototype.renderMustache = function () {
   const newHTML = Mustache.render($('#mustache-template').html(), this);
   $('main').append(newHTML);
-}
+};
 
 const renderKeywordOptions = function (keywordArray) {
   $('.kidsOfClone').remove();
@@ -53,11 +53,11 @@ const makeImageInstances = (jsonArr, num) => {
     //feature #2: Lab 2
     if (!keywordArray.includes(indexObj.keyword)) {
       keywordArray.push(indexObj.keyword);
-    };
+    }
   });
 
   imageArray.forEach(arrIndexVal => arrIndexVal.renderMustache());
-  
+
   renderKeywordOptions(keywordArray);
 };
 
@@ -85,7 +85,7 @@ function sortStuff () {
   console.log(selection);
   console.log(imageArray);
 
-  if (selection === "title") {
+  if (selection === 'title') {
     imageArray.sort((a, b) => {
       if(a.title > b.title) {
         return 1;
@@ -95,8 +95,8 @@ function sortStuff () {
         return 0;
       }
     });
-    
-  } else if (selection === "horns") {
+
+  } else if (selection === 'horns') {
     imageArray.sort((a, b) => {
       if(a.horns > b.horns) {
         return 1;
