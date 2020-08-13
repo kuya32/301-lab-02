@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+header > div {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+select {
+  display: block;
+}
+
+p {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  margin: 10px;
+}
+
+header {
+  margin: 0px 0px 60px 0px;
+}
+
+footer {
+  text-align: center;
+}

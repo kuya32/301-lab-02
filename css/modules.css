@@ -1,0 +1,44 @@
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+select {
+  height: 40px;
+  font-size: 1.5rem;
+  border: solid black 2px;
+}
+
+#pageOne, #pageTwo {
+  height: 40px;
+  font-size: 1.5rem;
+  background-color: white;
+}
+
+main {
+  margin: 0 auto;
+}
+
+img {
+  height: 320px;
+  border: groove 10px brown;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  height: 75px;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+footer {
+  font-size: 1.5rem;
+  padding-bottom: 40px;
+}
+

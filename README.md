@@ -1,6 +1,8 @@
-# Lab: 02 - jQuery Selectors and Events
+# Code Fellows | Lab: 02 & Lab: 03
+**Contributors:** [Tif Taylor](https://github.com/tiftaylor) and [Marchael Acode](https://github.com/kuya32)  
+**Date:** August 2020
 
-## Time Estimates
+## Time Estimates per Assignment Request
 
 1. Feature #1: Display images
 
@@ -23,9 +25,37 @@
 - Finish time: 9:40 PM
 - Actual time needed to complete: 25 minutes
 
-## Resources
+4. Feature #4: Pagination
 
+- Estimate of time needed to complete: 1 hour
+- Start time: 2:00 PM
+- Finish time: 3:30 PM
+- Actual time needed to complete: 1.5 hour 
+
+5. Feature #5: Templating
+
+- Estimate of time needed to complete: 1 hour
+- Start time: 3:15 PM
+- Finish time: 3:30 PM
+- Actual time needed to complete: 15 minutes
+
+6. Feature #6: Styling with Flexbox
+
+- Estimate of time needed to complete: 1 hour
+- Start time: 3:30 PM
+- Finish time: 4:30 PM
+- Actual time needed to complete: 1 hour
+
+7. Feature #7: Style the application
+
+- Estimate of time needed to complete: 1 hour
+- Start time: 4:40 PM
+- Finish time: 5:30 PM
+- Actual time needed to complete: 50 minutes
+
+## Resources
 - [Used Include method](https://www.w3schools.com/jsref/jsref_includes_array.asp#:~:text=The%20includes()%20method%20determines,element%2C%20and%20false%20if%20not)
 - [Used Each method](https://api.jquery.com/each/)
 - [Used Show and Hide method](https://www.w3schools.com/jquery/jquery_hide_show.asp)
-- Got help from Cait Rowland for 'change' event.
+- Got TA help from Cait Rowland for 'change' event.
+- Got TA help from Skyler for adding a 2nd param to our handle data function and to re-render data when sorting.
